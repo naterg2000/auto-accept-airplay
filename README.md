@@ -10,7 +10,9 @@ These links were very helpful:\
 [List UI Elements with AppleScript](https://stackoverflow.com/questions/42231133/use-applescript-to-list-the-names-of-all-ui-elements-in-a-window-gui-scripting)\
 [List all UI elements in a window](https://discussions.apple.com/thread/4390028?sortBy=best)
 
-`set notificationPhrase to "would like to AirPlay to this Mac" -- DON'T CHANGE THIS
+Here's the script:
+```
+set notificationPhrase to "would like to AirPlay to this Mac"
 
 repeat
 	checkNotification(notificationPhrase) -- check for a notification
@@ -45,4 +47,5 @@ on checkNotification(phrase)
 			end try
 		end if
 	end tell
-end checkNotification`
+end checkNotification
+```
